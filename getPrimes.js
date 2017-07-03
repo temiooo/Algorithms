@@ -1,15 +1,27 @@
 module.exports = function getPrime(n){
-  var list = [];
+  
+  //Declare an empty array
+  let list = [];
 
-  if(typeof(n) !== "number"){
+  //Handles case where n is not a number
+  if(typeof(n) !== "number")
+  {
     return "Input is not a number";
   }
   
-  if(n <= 1){
+  //Handles case where n is less than or equal to 1
+  if(n <= 1)
+  {
     return list;
-  } else {
-    for(let i = 2; i <= n; i++){
-      if (Prime(i) === true){
+  } 
+
+  else
+
+  {//Handles case where n is greater than 1
+    for(let i = 2; i <= n; i++)
+    {//Check if a number is a prime number and add it to the array if it is
+      if (Prime(i) === true)
+      {
         list.push(i)
       }
     }
@@ -18,13 +30,20 @@ module.exports = function getPrime(n){
   return list;
 }
 
+//Function that checks if a number is a prime number
 function Prime(n){
-  var prime = true;
-  if (n < 2){
+  let prime = true;
+  if (n < 2)
+  {
     return false;
-  } else {
-    for(let i = 2; i <= Math.sqrt(n); i++){
-      if(n % i === 0){
+  } 
+
+  else 
+  {
+    for(let i = 2; i <= Math.sqrt(n); i++)
+    {
+      if(n % i === 0)
+      {
         prime = false;
       }
     }

@@ -39,7 +39,7 @@ describe("Get an array of prime numbers less than number", function() {
   	expect(getPrimes(10)).to.eql([2,3,5,7]);
   });
 
- it("it should return [2,3,5,7,11,13] if input is 13", function(){
-  	expect(getPrimes(13)).to.eql([2,3,5,7,11,13]);
+ it("it should return [2,3,5,7,11,13] if input is 15", function(){
+  	expect(getPrimes(15)).to.eql([2,3,5,7,11,13]);
   });
 });

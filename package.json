@@ -6,7 +6,7 @@
     "test": "mocha --reporter spec"
   },
   "keywords": [],
-  "author": "",
+  "author": "Temitope Joloko",
   "license": "ISC",
   "dependencies": {
     "chai": "^4.0.2",
